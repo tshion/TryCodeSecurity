@@ -10,14 +10,16 @@ class RegexInjectionViewController: UIViewController {
     
     
     @IBOutlet weak var labelRegex: UITextField!
+    @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var labelText: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelRegex.text = "^(a+)+$"
-        labelText.text = "aaaaaaaaaaaaaaaaaaaaaaaa!"
+        // https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS
+        labelRegex.text = "^(([a-z])+.)+[A-Z]([a-z])+$"
+        labelText.text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!"
     }
     
     
@@ -28,9 +30,8 @@ class RegexInjectionViewController: UIViewController {
         // BAD: Unsanitized user input is used to construct a regular expression
         let regexStr = "abc|\(remoteInput)"
         let regex = try! NSRegularExpression(pattern: regexStr)
-        for result in regex.matches(in: targetInput, range: NSRange(0..<targetInput.count)) {
-            print(result)
-        }
+        let matches = regex.matches(in: targetInput, range: NSRange(0..<targetInput.count))
+        labelResult.text = "NSRegularExpression: \(0 < matches.count)"
     }
     
     @IBAction func onRunSwiftRegex(_ sender: Any) {
@@ -39,7 +40,7 @@ class RegexInjectionViewController: UIViewController {
         
         // BAD: Unsanitized user input is used to construct a regular expression
         let regex = try! Regex(remoteInput)
-        let result = try! regex.wholeMatch(in: targetInput)
-        print(result)
+        let result = try? regex.wholeMatch(in: targetInput)
+        labelResult.text = "SwiftRegex: \(result != nil)"
     }
 }

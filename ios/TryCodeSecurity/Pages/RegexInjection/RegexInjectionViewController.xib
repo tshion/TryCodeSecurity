@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegexInjectionViewController" customModule="TryCodeSecurity" customModuleProvider="target">
             <connections>
                 <outlet property="labelRegex" destination="sDu-9Z-cNf" id="M1J-5N-MI1"/>
+                <outlet property="labelResult" destination="E5I-MW-T1t" id="o9S-es-QyX"/>
                 <outlet property="labelText" destination="0bC-wF-COC" id="8ed-e3-0RJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -64,6 +65,13 @@
                         <action selector="onRunNSRegex:" destination="-1" eventType="touchUpInside" id="0Eh-Ru-icI"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5I-MW-T1t">
+                    <rect key="frame" x="16" y="218" width="361" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
