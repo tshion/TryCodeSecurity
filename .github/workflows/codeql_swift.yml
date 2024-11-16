@@ -40,7 +40,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        source-root: "./ios/TryCodeSecurity"
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
