@@ -27,7 +27,7 @@ jobs:
       matrix:
         include:
         - language: swift
-          build-mode: autobuild
+          build-mode: manual
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -40,6 +40,10 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
+
+    - uses: github/codeql-action/autobuild@v3
+      with:
+        working-directory: "./ios/"
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
