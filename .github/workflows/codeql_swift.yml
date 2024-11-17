@@ -41,7 +41,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        source-root: "./ios/"
 
     - name: Build ios app
       run: bash .github/scripts/build_ios_simulator.bash
@@ -50,4 +49,3 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
-        checkout_path: "./ios/"
