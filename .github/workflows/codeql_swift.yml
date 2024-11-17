@@ -40,10 +40,11 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
+        source-root: "./ios/"
 
-    - uses: github/codeql-action/autobuild@v3
-      with:
-        working-directory: "./ios/"
+    - name: Build ios app
+      working-directory: "./ios/"
+      run: xcodebuild -sdk iphonesimulator ARCH=arm64
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
