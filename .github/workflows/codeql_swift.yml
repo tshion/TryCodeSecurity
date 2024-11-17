@@ -46,9 +46,8 @@ jobs:
     - name: Build ios app
       run: bash .github/scripts/build_ios_simulator.bash
 
-    - run: cd ./ios/
-
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+        checkout_path: "./ios/"
