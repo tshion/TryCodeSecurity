@@ -43,8 +43,7 @@ jobs:
         source-root: "./ios/"
 
     - name: Build ios app
-      working-directory: "./ios/"
-      run: xcodebuild -sdk iphonesimulator ARCH=arm64
+      run: bash .github/scripts/build_ios_simulator.bash
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
