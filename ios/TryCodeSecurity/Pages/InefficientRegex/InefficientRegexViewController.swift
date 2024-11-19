@@ -19,7 +19,7 @@ class InefficientRegexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textSearch.text = "__A_"
+        textSearch.text = "___A_"
     }
 
 

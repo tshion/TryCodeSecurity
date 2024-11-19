@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       macOSRunner:
-        default: macos-15
+        default: macos-14
         description: https://github.com/actions/runner-images
         required: true
         type: string
@@ -27,7 +27,7 @@ jobs:
       matrix:
         include:
         - language: swift
-          build-mode: autobuild
+          build-mode: manual
     timeout-minutes: 15
     steps:
     - name: Checkout repository
@@ -42,12 +42,10 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
 
-    # - name: Build ios app
-    #   run: bash .github/scripts/build_ios_simulator.bash
+    - name: Build ios app
+      run: bash .github/scripts/build_ios_simulator.bash
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
-        checkout_path: "./"
-

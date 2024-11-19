@@ -2,7 +2,7 @@
 
 project="TryCodeSecurity"
 xcodebuild \
-    -project "./$project.xcodeproj"\
+    -project "ios/$project.xcodeproj"\
     -target "$project" \
     -arch arm64 \
     -sdk iphonesimulator
