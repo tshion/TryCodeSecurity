@@ -17,6 +17,8 @@
 		054B76972CECAA7C00ADFE6B /* InefficientRegexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B76902CECAA7C00ADFE6B /* InefficientRegexViewController.xib */; };
 		054B76982CECAA7C00ADFE6B /* RegexInjectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B76922CECAA7C00ADFE6B /* RegexInjectionViewController.swift */; };
 		054B76992CECAA7C00ADFE6B /* RegexInjectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B76932CECAA7C00ADFE6B /* RegexInjectionViewController.xib */; };
+		057E005D2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057E005B2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift */; };
+		057E005E2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057E005C2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		054B76902CECAA7C00ADFE6B /* InefficientRegexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InefficientRegexViewController.xib; sourceTree = "<group>"; };
 		054B76922CECAA7C00ADFE6B /* RegexInjectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexInjectionViewController.swift; sourceTree = "<group>"; };
 		054B76932CECAA7C00ADFE6B /* RegexInjectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegexInjectionViewController.xib; sourceTree = "<group>"; };
+		057E005B2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeUIWebViewController.swift; sourceTree = "<group>"; };
+		057E005C2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnsafeUIWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,18 @@
 			children = (
 				054B76912CECAA7C00ADFE6B /* InefficientRegex */,
 				054B76942CECAA7C00ADFE6B /* RegexInjection */,
+				057E005A2CEDFED8002F2F12 /* UnsafeUIWebView */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		057E005A2CEDFED8002F2F12 /* UnsafeUIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				057E005B2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift */,
+				057E005C2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib */,
+			);
+			path = UnsafeUIWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,7 @@
 				054B76882CECA8DD00ADFE6B /* Base in Resources */,
 				054B76992CECAA7C00ADFE6B /* RegexInjectionViewController.xib in Resources */,
 				054B76832CECA8DC00ADFE6B /* Base in Resources */,
+				057E005E2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B76802CECA8DC00ADFE6B /* ViewController.swift in Sources */,
+				057E005D2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift in Sources */,
 				054B76982CECAA7C00ADFE6B /* RegexInjectionViewController.swift in Sources */,
 				054B76962CECAA7C00ADFE6B /* InefficientRegexViewController.swift in Sources */,
 				054B767C2CECA8DC00ADFE6B /* AppDelegate.swift in Sources */,

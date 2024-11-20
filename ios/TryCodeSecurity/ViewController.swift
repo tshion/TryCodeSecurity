@@ -17,4 +17,9 @@ class ViewController: UIViewController {
         let vc = RegexInjectionViewController.newInstance()
         present(vc, animated: true, completion: nil)
     }
+    
+    @IBAction func onGoUnsafeUIWebView(_ sender: Any) {
+        let vc = UnsafeUIWebViewController.newInstance()
+        present(vc, animated: true, completion: nil)
+    }
 }
