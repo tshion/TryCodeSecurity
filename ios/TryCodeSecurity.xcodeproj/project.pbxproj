@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050F3B2F2CF1A61400240840 /* BadHtmlFilteringGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050F3B2D2CF1A61400240840 /* BadHtmlFilteringGroupViewController.swift */; };
+		050F3B302CF1A61400240840 /* BadHtmlFilteringGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050F3B2E2CF1A61400240840 /* BadHtmlFilteringGroupViewController.xib */; };
 		054B767C2CECA8DC00ADFE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B767B2CECA8DC00ADFE6B /* AppDelegate.swift */; };
 		054B767E2CECA8DC00ADFE6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B767D2CECA8DC00ADFE6B /* SceneDelegate.swift */; };
 		054B76802CECA8DC00ADFE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B767F2CECA8DC00ADFE6B /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050F3B2D2CF1A61400240840 /* BadHtmlFilteringGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadHtmlFilteringGroupViewController.swift; sourceTree = "<group>"; };
+		050F3B2E2CF1A61400240840 /* BadHtmlFilteringGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadHtmlFilteringGroupViewController.xib; sourceTree = "<group>"; };
 		054B76782CECA8DC00ADFE6B /* TryCodeSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryCodeSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		054B767B2CECA8DC00ADFE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		054B767D2CECA8DC00ADFE6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050F3B2C2CF1A5E500240840 /* BadHtmlFilteringGroup */ = {
+			isa = PBXGroup;
+			children = (
+				050F3B2D2CF1A61400240840 /* BadHtmlFilteringGroupViewController.swift */,
+				050F3B2E2CF1A61400240840 /* BadHtmlFilteringGroupViewController.xib */,
+			);
+			path = BadHtmlFilteringGroup;
+			sourceTree = "<group>";
+		};
 		054B766F2CECA8DC00ADFE6B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		054B76952CECAA7C00ADFE6B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				050F3B2C2CF1A5E500240840 /* BadHtmlFilteringGroup */,
 				054B76912CECAA7C00ADFE6B /* InefficientRegex */,
 				054B76942CECAA7C00ADFE6B /* RegexInjection */,
 				057E005A2CEDFED8002F2F12 /* UnsafeUIWebView */,
@@ -178,6 +192,7 @@
 				054B76852CECA8DD00ADFE6B /* Assets.xcassets in Resources */,
 				054B76972CECAA7C00ADFE6B /* InefficientRegexViewController.xib in Resources */,
 				054B76882CECA8DD00ADFE6B /* Base in Resources */,
+				050F3B302CF1A61400240840 /* BadHtmlFilteringGroupViewController.xib in Resources */,
 				054B76992CECAA7C00ADFE6B /* RegexInjectionViewController.xib in Resources */,
 				054B76832CECA8DC00ADFE6B /* Base in Resources */,
 				057E005E2CEDFEFC002F2F12 /* UnsafeUIWebViewController.xib in Resources */,
@@ -192,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B76802CECA8DC00ADFE6B /* ViewController.swift in Sources */,
+				050F3B2F2CF1A61400240840 /* BadHtmlFilteringGroupViewController.swift in Sources */,
 				057E005D2CEDFEFC002F2F12 /* UnsafeUIWebViewController.swift in Sources */,
 				054B76982CECAA7C00ADFE6B /* RegexInjectionViewController.swift in Sources */,
 				054B76962CECAA7C00ADFE6B /* InefficientRegexViewController.swift in Sources */,
