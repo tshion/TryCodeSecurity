@@ -10,6 +10,14 @@
             "args": [
                 ".github/scripts/build_ios_simulator.bash",
             ]
+        },
+        {
+            "label": "Build ipa for iphonesimulator",
+            "type": "process",
+            "command": "bash",
+            "args": [
+                ".github/scripts/build_ipa_ios_simulator.bash",
+            ]
         }
     ]
 }

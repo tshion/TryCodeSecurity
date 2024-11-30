@@ -114,3 +114,11 @@ fastlane/test_output
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+
+
+###############
+### Project ###
+###############
+build/
+*.xcarchive
